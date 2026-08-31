@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "digitalassetscan-mcp"
+version = "0.1.0"
+description = "Stdio MCP adapter for the Digital Asset Scan canonical API"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = []
+authors = [{ name = "CurrenC Corporation" }]
+license = "MIT"
+license-files = ["LICENSE.md"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.urls]
+Repository = "https://github.com/digitalassetscan/digitalassetscan-mcp"
+
+[project.scripts]
+digitalassetscan-mcp = "digitalassetscan_mcp.server:main"
+
+[tool.setuptools]
+packages = ["digitalassetscan_mcp"]

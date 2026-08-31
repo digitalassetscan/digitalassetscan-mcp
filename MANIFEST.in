@@ -1,0 +1,8 @@
+include README.md
+include LICENSE.md
+include pyproject.toml
+include server.json
+recursive-include digitalassetscan_mcp *.py
+prune tests
+global-exclude *.py[cod]
+global-exclude __pycache__
